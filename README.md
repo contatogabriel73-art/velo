@@ -8,11 +8,11 @@ Na pasta do projeto, execute `python -m http.server 4173 --directory dist` e abr
 
 ## Funcionalidades
 
-17 categorias de bicicletas; departamentos de equipamentos e vestuário; busca; filtros por preço, material e tamanho; ordenação; detalhes de produto; comparação de duas ou três bicicletas; sacola persistida no navegador; conclusão demonstrativa sem pagamento; menu e layout responsivos.
+6 categorias principais de bicicletas; departamentos de equipamentos e vestuário; busca; filtros por preço, material e tamanho; ordenação; detalhes de produto; comparação de duas ou três bicicletas; sacola persistida no navegador; conclusão demonstrativa sem pagamento; menu e layout responsivos.
 
 ## Conteúdo demonstrativo
 
-Marca, modelos, preços e especificações são fictícios. As fotografias são editoriais de ciclismo e não representam os modelos ou acessórios descritos. O projeto não processa compras nem envia pedidos.
+Marca VELO e preços são demonstrativos. O catálogo tem seis bicicletas, seis equipamentos e sete peças de vestuário com fotos dos produtos de referência da Specialized. Fontes das imagens em image-sources.json. O projeto não processa compras nem envia pedidos.
 
 Referência funcional: https://www.specialized.com/br/pt/shop/bicicletas
 Referência visual fornecida: Bike Website, de Anna Kovalchuk — https://www.behance.net/gallery/126412987/Bike-Website

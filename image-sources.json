@@ -1,0 +1,78 @@
+[
+  {
+    "key": "bike-mtb",
+    "url": "https://resources.specialized.com/image/91827-65_ROCKHOPPER-SPORT-KH-METOBSD-SHDWSIL-M---29_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "bike-road",
+    "url": "https://resources.specialized.com/image/94927-50_TARMAC-SL9-COMP-AXS-VIVRED-WHT_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "bike-gravel",
+    "url": "https://resources.specialized.com/image/91427-02_CRUX-5-SW-LTD-MADE-IN-RACING-REDPRL-REDTNT-METWHTSIL_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "bike-electric",
+    "url": "https://resources.specialized.com/image/95226-71_LEVO-ALLOY-G4-METOBSD-SILDST_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "helmet",
+    "url": "https://resources.specialized.com/image/60821-104_HLMT_ALIGN-II-HLMT-MIPS-CE-BLK-BLKREFL-S-M_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "light",
+    "url": "https://resources.specialized.com/image/49120-210_LGHT_STIX-ELITE-TAILLIGHT_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "shoes",
+    "url": "https://resources.specialized.com/image/61020-514_SHOE_TORCH-10-RD-SHOE-BLK-42_HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "pump",
+    "url": "https://resources.specialized.com/image/47214-2252_PUMP_AIR-TOOL-SPORT-STEEL-FLR_BLK-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "cage",
+    "url": "https://resources.specialized.com/image/43015-1000_CAGE_RIB-II-RD-MTN_BLK-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "saddle",
+    "url": "https://resources.specialized.com/image/27116-180_SDDL_POWER-COMP_BLK-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "jersey",
+    "url": "https://resources.specialized.com/image/64023-3411_APP_PRIME-JERSEY-SS-MEN-DKNVY-SOLID_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "bib",
+    "url": "https://resources.specialized.com/image/64522-040_APP_PRIME-BIB-SHORT-MEN-BLK-M_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "jacket",
+    "url": "https://resources.specialized.com/image/64421-780_APP_LEGACY-WIND-JACKET-MEN-BLK-M_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "vest",
+    "url": "https://resources.specialized.com/image/64422-020_APP_PRIME-WIND-VEST-MEN-BLZ-M_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "shorts",
+    "url": "https://resources.specialized.com/image/64523-350_APP_FOUNDATION-SHORT-MEN-BLK_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "gloves",
+    "url": "https://resources.specialized.com/image/67019-303_GLV_SL-PRO-GLOVE-SF-BLK-M_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "socks",
+    "url": "https://resources.specialized.com/image/64721-242_APP_SOFT-AIR-TALL-SOCK-BLK-WHT-M_PLP-HERO-SQUARE?bg=f1f1f1&w=1000&h=1000&q=85"
+  },
+  {
+    "key": "bike-city",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKtu1gxH4BXufPWEChAdQjNdUZ/92325-81_SIRRUS-X-20-KM-ION-SILDST_HERO-PDP.webp?bg=f1f1f1&w=1200&h=800&fit=fill&crop=focalpoint&q=85"
+  },
+  {
+    "key": "bike-kids",
+    "url": "https://www.specializedconceptstore.co.uk/content/products/2022-jett-20_19177.jpg?v=1708970840"
+  }
+]
