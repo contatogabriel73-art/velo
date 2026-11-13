@@ -88,3 +88,19 @@ $('#searchButton').onclick=()=>{if(!$('#productPage').hidden)location.hash='cata
 $('#cartButton').onclick=()=>{renderCart();$('#cartDialog').showModal()};$('#compareOpen').onclick=openCompare;$('#compareClear').onclick=()=>{comparison.clear();renderCompare()};
 document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}}));
 saveCart();renderCategories();renderProducts();
+
+// Movimento de apresentação da bicicleta na hero.
+const heroMotionToggle=document.querySelector('#heroMotionToggle');
+if(heroMotionToggle){
+ heroMotionToggle.addEventListener('click',()=>{
+  const paused=document.querySelector('.hero-cowboy').classList.toggle('hero-motion-paused');
+  heroMotionToggle.setAttribute('aria-pressed',String(paused));
+  heroMotionToggle.setAttribute('aria-label',paused?'Retomar movimento da bicicleta':'Pausar movimento da bicicleta');
+  heroMotionToggle.querySelector('span').textContent=paused?'▶':'Ⅱ';
+  document.querySelector('#heroMotionLabel').innerHTML=paused?'RETOMAR<br>MOVIMENTO':'PAUSAR<br>MOVIMENTO';
+ });
+ if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(([entry])=>entry.target.classList.toggle('hero-motion-offscreen',!entry.isIntersecting));
+  observer.observe(document.querySelector('.hero-cowboy'));
+ }
+}
