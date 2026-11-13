@@ -25,3 +25,7 @@ Sintaxe JavaScript validada com node --check. Prévia HTTP retornou 200. Fluxos 
 ## Páginas de produto
 
 Todos os 19 produtos têm rota própria em #produto/ID, galeria com miniaturas e ampliação, descrição, ficha de referência, seletor de cor e tamanho, guia de escolha e simulação de entrega por CEP ou retirada em lojas conceito. A sacola guarda tamanho, cor e modalidade de recebimento. Os ângulos adicionais vêm das galerias oficiais quando disponíveis; detalhes ampliados da foto original são identificados como ampliação. Cores, medidas, frete, prazos e lojas fazem parte da demonstração, sem estoque ou pedidos reais.
+
+## Cores no configurador
+
+Todos os 19 produtos têm três cores selecionáveis. Onde não há fotografia da variação, a interface usa uma prévia de cor simulada por filtros SVG, identificada na legenda. As fotos originais são preservadas. A cor escolhida e seu efeito visual seguem para a sacola e são restaurados ao recarregar.
