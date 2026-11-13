@@ -21,3 +21,7 @@ Fotografias: Unsplash, arquivos identificados pelos IDs em dist/assets. Fontes: 
 ## Verificação
 
 Sintaxe JavaScript validada com node --check. Prévia HTTP retornou 200. Fluxos de busca, material, comparação, seleção de tamanho, quantidade e conclusão da sacola testados no navegador. Menu móvel testado em 390 px sem transbordamento horizontal.
+
+## Páginas de produto
+
+Todos os 19 produtos têm rota própria em #produto/ID, galeria com miniaturas e ampliação, descrição, ficha de referência, seletor de cor e tamanho, guia de escolha e simulação de entrega por CEP ou retirada em lojas conceito. A sacola guarda tamanho, cor e modalidade de recebimento. Os ângulos adicionais vêm das galerias oficiais quando disponíveis; detalhes ampliados da foto original são identificados como ampliação. Cores, medidas, frete, prazos e lojas fazem parte da demonstração, sem estoque ou pedidos reais.
