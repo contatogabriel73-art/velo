@@ -30,3 +30,55 @@ body:has(#homeMain:not([hidden]))>header{background:#f1f1f1;border-bottom-color:
 .hero-showroom.is-initializing .showroom-slide{transition:none}.hero-showroom.is-initializing .showroom-bike-image{animation:none}
 @keyframes showroom-float-mobile{0%,100%{transform:translateY(0) scale(calc(var(--bike-zoom,1.7)*.84))}50%{transform:translateY(-6px) scale(calc(var(--bike-zoom,1.7)*.84))}}
 @media(max-width:700px){.showroom-bike-image{transform:scale(calc(var(--bike-zoom,1.7)*.84));animation-name:showroom-float-mobile}}
+/* Hero "ilha flutuante": título com brilho que segue o cursor, bike inclinada sobre a ilha e pedras soltas. */
+@property --mx{syntax:'<length-percentage>';inherits:true;initial-value:22%}
+@property --my{syntax:'<length-percentage>';inherits:true;initial-value:74%}
+.hero.hero-island{--px:0;--py:0;background:#f1f1f1}
+.hero-island .showroom-heading{top:3.5%;z-index:1}
+.hero-island .showroom-heading h1{display:inline-block;font:800 clamp(64px,9.6vw,176px)/.93 Manrope,Arial,sans-serif;letter-spacing:-.05em;white-space:nowrap;margin:0;color:transparent;background:radial-gradient(circle clamp(150px,19vw,330px) at var(--mx) var(--my),#b98510 0%,#d2a730 26%,#e6d49a 52%,#ece7d9 76%);-webkit-background-clip:text;background-clip:text}
+.hero-island .showroom-stage{top:15%;height:45%;width:min(70%,940px);mix-blend-mode:normal}
+.hero-island .showroom-slide{mix-blend-mode:normal}
+.hero-island .showroom-bike-image{filter:drop-shadow(0 6px 10px #1a140a22)}
+.hero-island .showroom-bike-image{position:absolute;max-width:none;width:auto;height:auto;object-fit:fill;transform:none;animation:none}
+.hero-island .showroom-slide{transform:translate3d(calc(var(--slide-offset,0)*84% + var(--slide-drag,0px)),calc((1 - var(--slide-scale,1))*30px),0) scale(var(--slide-scale,1))}
+.bike-shadow{position:absolute;border-radius:50%;background:radial-gradient(closest-side,#2c2414a8,#2c241440 55%,#2c241400);pointer-events:none}
+.hero-island .showroom-slide{overflow:visible}
+/* bike e ilha flutuam juntas: mesma animação nos dois blocos */
+.hero-island .showroom-stage,.showroom-island{animation:hero-bob 8s ease-in-out infinite}
+@keyframes hero-bob{0%,100%{translate:0 0}50%{translate:0 10px}}
+.showroom-island{position:absolute;left:50%;top:51%;width:min(38%,560px,calc((100svh - 120px)*.62));z-index:2;pointer-events:none;transform:translateX(-50%)}
+.showroom-island svg,.showroom-island img{display:block;width:100%;height:auto}
+.showroom-island svg{filter:drop-shadow(0 26px 24px #4a3f2c26)}
+.showroom-island img{filter:drop-shadow(0 28px 26px #4a3f2c2b)}
+.showroom-island.has-photo svg,.island-rock.has-photo svg{display:none}
+.island-rocks{position:absolute;inset:0;z-index:3;pointer-events:none}
+.island-rock{position:absolute;display:block;transition:transform .6s ease-out}
+.island-rock svg,.island-rock img{display:block;width:100%;height:auto}
+.island-rock svg{filter:drop-shadow(0 8px 8px #4a3f2c2e)}
+.island-rock img{filter:drop-shadow(0 8px 8px #4a3f2c33)}
+.rock-1{left:33%;top:6%;width:clamp(34px,3.4vw,62px);transform:translate(calc(var(--px)*26px),calc(var(--py)*18px))}
+.rock-1>*{animation:rock-drift 7s ease-in-out infinite}
+.rock-2{right:19%;top:25%;width:clamp(40px,4.2vw,78px);transform:translate(calc(var(--px)*-34px),calc(var(--py)*-22px))}
+.rock-2>*{animation:rock-drift 9s ease-in-out -3s infinite}
+.rock-3{left:21%;top:56%;width:clamp(24px,2.3vw,42px);transform:translate(calc(var(--px)*18px),calc(var(--py)*-14px))}
+.rock-3>*{animation:rock-drift 8s ease-in-out -5s infinite}
+@keyframes rock-drift{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-14px) rotate(7deg)}}
+.showroom-pill{position:absolute;left:60.5%;top:53%;z-index:6;background:#121a1a;color:#f4f5f1;font:600 clamp(12px,1.05vw,16px)/1.1 Manrope,Arial,sans-serif;padding:.95em 1.5em;border-radius:99px;transform:rotate(-9deg);box-shadow:0 10px 22px #14202026;transition:transform .25s,background .25s;white-space:nowrap}
+.showroom-pill:hover{transform:rotate(-4deg) scale(1.06);background:#159ca5}
+.hero-island .showroom-navigation{left:24%;right:24%;top:37%}
+.hero-island .showroom-navigation button{background:transparent;border:1px solid #9dbfc3;color:#15858e;width:52px;height:52px}
+.hero-island .showroom-navigation button:hover{background:#159ca5;border-color:#159ca5;color:#fff}
+.showroom-blurb{position:absolute;right:15%;top:47%;z-index:5;width:170px;margin:0;font-size:12px;line-height:1.45;color:#47524f}
+.hero-island .showroom-footer{grid-template-columns:1fr 1fr;pointer-events:none}
+.hero-island .showroom-footer>*{pointer-events:auto}
+.hero-island .showroom-interaction{grid-column:1;grid-row:2;justify-self:start;text-align:left;margin:-8px 0 0 -11px}
+.hero-island .showroom-product{grid-column:1;grid-row:1}
+.hero-island .showroom-product-link{grid-column:2;grid-row:1/3;align-self:end;background:#121a1a;border-color:#121a1a;color:#f4f5f1}
+.hero-island .showroom-product-link:hover{background:#159ca5;border-color:#159ca5}
+.hero-island .showroom-product-link>span{color:inherit}
+@media(hover:none){.hero-island .showroom-heading h1{animation:title-sweep 9s ease-in-out infinite alternate}}
+@keyframes title-sweep{0%{--mx:8%;--my:78%}50%{--mx:60%;--my:22%}100%{--mx:94%;--my:76%}}
+@media(min-width:1600px){.hero-island .showroom-heading h1{font-size:clamp(150px,9.6vw,190px)}.hero-island .showroom-stage{top:15%;height:45%}}
+@media(max-width:1000px){.hero-island .showroom-heading h1{font-size:clamp(60px,11vw,110px)}.hero-island .showroom-stage{top:17%;width:84%;height:42%}.showroom-island{width:56%;top:55%}.hero-island .showroom-navigation{left:6%;right:6%;top:36%}.showroom-blurb{display:none}.showroom-pill{left:64%;top:56%}}
+@media(max-width:700px){.hero-island .showroom-heading{top:26px}.hero-island .showroom-heading h1{font-size:13.6vw;line-height:.96}.hero-island .showroom-stage{top:15%;height:36%;width:100%}.showroom-island{width:78%;max-width:380px;top:41%}.hero-island .showroom-navigation{left:4%;right:4%;top:28%}.hero-island .showroom-navigation button{width:38px;height:38px}.showroom-pill{left:61%;top:48.5%;font-size:11px}.hero-island .showroom-category{display:none}.rock-1{left:12%;top:4%}.rock-2{right:7%;top:19%}.rock-3{left:9%;top:44%}.hero-island .showroom-footer{grid-template-columns:1fr auto}.hero-island .showroom-product{grid-column:1/-1}.hero-island .showroom-interaction{grid-column:1;grid-row:2;margin:0 0 0 -8px}.hero-island .showroom-product-link{grid-column:2;grid-row:2}}
+@media(prefers-reduced-motion:reduce){.hero-island .showroom-stage,.showroom-island,.island-rock>*,.hero-island .showroom-heading h1{animation:none!important}.island-rock{transition:none}}
