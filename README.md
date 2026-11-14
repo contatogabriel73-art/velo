@@ -29,3 +29,7 @@ Todos os 19 produtos têm rota própria em #produto/ID, galeria com miniaturas e
 ## Cores no configurador
 
 Todos os 19 produtos têm três cores selecionáveis. Onde não há fotografia da variação, a interface usa uma prévia de cor simulada por filtros SVG, identificada na legenda. As fotos originais são preservadas. A cor escolhida e seu efeito visual seguem para a sacola e são restaurados ao recarregar.
+
+## Hero interativa
+
+Vitrine com Rockhopper Sport, Tarmac SL9 Comp, Sirrus X 2.0 e Turbo Levo 4 Alloy. Navegação circular por arraste, setas, pontos e teclado; movimento discreto ao mouse; suporte ao gesto horizontal com rolagem vertical preservada em telas móveis. Nome, modalidade, preço e link acompanham o modelo ativo. Respeita a preferência de movimento reduzido. Referência visual: https://br.pinterest.com/pin/418905202857774331/
